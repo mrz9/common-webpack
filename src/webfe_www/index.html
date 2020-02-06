@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>傲创(柬埔寨)网络科技有限公司-傲立东南亚，创新有激情</title>
+	<link rel="shortcut icon" href="../image/ultronnet.ico">
+	<link href="../css/reset.css?v1.0" rel="stylesheet">
+	<!-- 本页css -->
+	<link href="../css/pc.css?v1.0" rel="stylesheet">
+	<style>
+		.InfoRightBox[position="center"]{
+			display: block !important;
+		}
+	</style>
+	<script type="text/javascript">
+		/* 检测是否移动端 */
+    //用户代理
+		var os = function (){
+				var ua = navigator.userAgent,
+				isWindowsPhone = /(?:Windows Phone)/.test(ua),
+				isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+				isAndroid = /(?:Android)/.test(ua),
+				isFireFox = /(?:Firefox)/.test(ua),
+				isChrome = /(?:Chrome|CriOS)/.test(ua),
+				isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+				isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+				isPc = !isPhone && !isAndroid && !isSymbian;
+				return {
+						isTablet: isTablet,
+						isPhone: isPhone,
+						isAndroid: isAndroid,
+						isPc: isPc
+				};	
+		}();
+        
+    RegExp(/\/\/([\w]*)\./).test(window.location.href);
+		if (os.isAndroid || os.isPhone || os.isTablet) {  
+				//alert(RegExp.$1)
+				//判断是什么环境的地址 导向移动端
+				if(RegExp.$1 == 'www1'){
+						//alert('内网测试')
+						window.location.href = 'http://m1.ultronnet.com';
+				}else if(RegExp.$1 == 'testwww'){
+						//alert('外网测试')
+						window.location.href = 'http://testm.ultronnet.com';
+				}else{
+						//alert('正式')
+						window.location.href = 'http://m.ultronnet.com';
+				}
+		}
+		/* 检测是否移动端 */
+	</script>
+</head>
+<body>
+	<div class="loading">
+		<img class="loading" src="../image/loading.svg"/>
+	</div>
+
+	<div id="content">		
+	<!-- 导航 -->
+	<div class="nav" data-30="position:absolute;background-color:transparent;box-shadow: 0 0 5px transparent;" data-31="position: fixed;background-color:#fff;box-shadow: 0 0 5px #eee;">
+		<img class="tipLogo" src="../image/logo.svg" data-30="display:inline;" data-31="display:none;" />
+		<!-- 一开始图片先隐藏  -->
+		<img class="tipLogo" src="../image/logo2.svg" style="display: none;" data-30="display:none;" data-31="display:inline;"  />
+		<ul>
+			<!--
+			代替插件
+			-->
+			<li>
+				<a href="#top" data-menu-top="0">
+					<span class="ch">首页</span>
+					<span class="en">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="#service" data-menu-top="500">
+					<span class="ch">公司服务</span>
+					<span class="en">Service</span>
+				</a>
+			</li>
+			<li>
+				<a href="#product" data-menu-top="774">
+					<span class="ch">公司产品</span>
+					<span class="en">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="#forMe" data-menu-top="1355">
+						<span class="ch">关于我们</span>
+						<span class="en">About US</span>
+				</a>
+			</li>
+			<li>
+				<a href="#corporate" data-menu-top="2172">
+					<span class="ch">企业文化</span>
+					<span class="en">Culture</span>
+				</a>
+			</li>
+			<li>
+				<a href="#welfare" data-menu-top="2679">
+					<span class="ch">员工福利</span>
+					<span class="en">Welfare</span>
+				</a>
+			</li>
+		</ul> 
+		<!--
+		<div class="languageButton" data-30="border-color:white;" data-31="border-color:black;">
+			<div class="l_change" data-30="background-color:white;" data-31="background-color:black;">
+			</div>	
+			<span class="Cn" data-30="color:black;" data-31="color:white;">中</span>
+			<span class="En"data-30="color:white;" data-31="color:black;" >En</span>
+		</div>
+		-->
+	</div>
+	<!-- 导航 -->
+	<div class="giantScreen">
+		<!--
+		<div style="transform: scale(1);width: 100%;height: 100%;" data-0="transform: scale(1);" data-200="transform: scale(1.1);">
+			<div style="position: absolute;bottom: 0;left: 50%;transform: translate(-50%);">
+				<img class="giantScreenBigimg" src="../image/banner2.jpg"/>
+			</div>
+		</div>
+		-->
+		<div data-0="background-size: auto 100%;" data-200="background-size: auto 110%;"
+		style="
+		background: url(../image/banner2.jpg) no-repeat center bottom;
+    background-size: auto 100%;
+    width: 100%;
+		height: 100%;"
+		>
+		</div>
+		<div class="cover">
+			<div>
+				<!--
+				data-50="height:84px;margin-bottom:16px;" data-200="height:0px;margin-bottom:100px;"	
+				-->
+				<h1>
+					<span class="ch">因为专注 所以专业</span>
+					<span class="en">Connecting People</span>
+				</h1>
+				<!-- 
+					data-25="height:60px;" data-200="height:0px"
+				-->
+				<p>
+					<span class="ch">
+							我们综合考量创新、技术、质量、环境等因素，致力于开发和生产高附加值的互联网产品，从而建立和维护客户关系。
+					</span>
+					<span class="en">
+						The foundation of our business is to strive for innovation, technology
+						quality and the environment.Develop and produce high value-added Internet products 
+						to build and maintain customer relationships.
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>	
+	<!-- 服务和产品块 -->
+	<div style="background: #20212C;position: relative;z-index: 2;">
+	<div class="serviceAnimate"><!-- 这个父元素是用来执行动画的 -->
+		<div class="service" data-439="height:697px" data-1300=" height:1220px"> 
+				<div class="topLogo">
+					<img src="../image/logotop.svg" /><br/>
+					<div class="topLogoTitle">
+							<img src="../image/line.png" />
+							<span class="logoText">
+								<span class="ch">服务&产品</span>
+								<span class="en">Services & Products</span>
+							</span>
+							<img src="../image/line.png" />
+					</div>
+					<!--
+					<p class="bottomText">Service & Product</p>
+					-->
+				</div>
+				<div class="serviceCenter">
+					<div class="serviceBox">
+						<div class="serviceCenterItem">
+								<img class="logo" src="../image/productDesign.svg"/>
+								<p class="title">
+									<span class="ch">产品设计</span>
+									<span class="en">Develop</span>
+								</p>
+								<p class="info">
+									<!-- 中文13字换行思想 -->
+									<span class="ch">
+										曾创造过亿日活产品的专业团队，<br/>完全贴合您的需求设计极致优秀的产品
+									</span>
+									<span class="en">
+										From product development to design<br/>
+										we have an experienced R & D team to meet<br/>
+										diversified market needs
+									</span>
+								</p>
+							</div>
+							<div class="serviceCenterItem">
+								<img class="logo" src="../image/it.svg"/>
+								<p class="title">
+									<span class="ch">
+										技术开发
+									</span>
+									<span class="en">
+										Product Design
+									</span>
+								</p>
+								<p class="info">
+									<span class="ch">
+										研发团队拥有领先的前沿技术<br/>和优质敏捷的产品交付能力，可超前满足多样化的市场需求
+									</span>
+									<span class="en">
+										Have an experienced product team<br/>
+										they are professional and responsible<br/>
+										Tailor-made products for you
+									</span>
+								</p>
+							</div>
+							<div class="serviceCenterItem">
+								<img class="logo" src="../image/BrandOperation.svg"/>
+								<p class="title">
+									<span class="ch">
+										品牌&运营
+									</span>
+									<span class="en">
+										Brand & Operation
+									</span>
+								</p>
+								<p class="info">
+									<span class="ch">
+										提供专业的品牌营销传播策略<br/> 与咨询服务、品牌线上全栈式整合传播 产品推广、产品运营等					
+									</span>
+									<span class="en">
+										We provide professional brand marketing<br/>
+										Consulting and brand online integration<br/>
+										Product promotion and operation
+									</span>
+								</p>
+							</div>
+							<div class="serviceCenterItem">
+								<img class="logo" src="../image/Cloudsolutions.svg"/>
+								<p class="title">
+									<span class="ch">
+										云解决方案
+									</span>
+									<span class="en">
+										Cloud solution
+									</span>
+								</p>
+								<p class="info">
+									<span class="ch">
+										为您的私有云提供全集成服务<br/> 整合网络优化与数据中心功能 全力解决产品稳定性和安全性等问题
+									</span>
+									<span class="en">
+										Private cloud services for you<br/>
+										Mitigate organizational feasibility<br/>
+										Optimize network and data
+									</span>
+								</p>
+							</div>
+					</div>
+					<!-- 产品延伸块 -->
+					<div class="product">
+						<div class="productBox">
+							<div class="productItem">
+									<img class="logo" src="../image/lema.svg"/>
+									<p class="title">
+										<span class="ch">乐马</span>
+										<span class="en">LE MAJESTIC</span>
+									</p>
+									<p class="text">
+										<span class="ch">
+											快捷便利支付金融服务平台和全球商旅服务网络<br/>
+											让每一位精英体验奢华的礼宾服务，尊享美好生活
+										</span>
+										<span class="en">
+											Global network for busineess travel, luxury concierge<br/>
+											service, fast payment Financial platform for every<br/> 
+											elite who keep seeking a better life.
+										</span>
+									</p>
+									<!-- 第三方要新开tag -->
+									<a class="btn" target="_blank" href="https://download.lemajestic.com/pc/">
+										<span class="ch">查看详情</span>
+										<span class="en">More</span>
+									</a>
+							</div>
+							<div class="productItem">
+									<img class="logo" src="../image/zhanche.svg"/> 
+									<p class="title">
+											<span class="ch">乐马专车</span>
+											<span class="en">Lema Car</span>
+									</p>
+									<p class="text">
+										<span class="ch">
+											乐马专车致力于为尊贵的乐马会员量身打造<br/>
+											我们提供最顶级的专车服务
+										</span>
+										<span class="en">
+										  Lema Car is committed to tailor-made for<br/>
+											distinguished Lema members We provide the<br/> 
+											best private car services
+										</span>
+									</p>
+									<a class="btn" target="_blank" href="https://cardownload.lemajestic.com/pc/">
+										<span class="ch">查看详情</span>
+										<span class="en">More</span>
+									</a>
+							</div>
+							<div class="productItem">
+									<img class="logo" src="../image/fanyan.svg"/>
+									<p class="title">
+										<span class="ch">泛亚生活</span>
+										<span class="en">Panasia</span>
+									</p>
+									<p class="text"> 
+										<span class="ch">
+											泛亚生活致力于提供舒适生活的一站式服务平台<br/>
+											丰富全面的功能，方便快捷的服务
+										</span>
+										<span class="en">
+											Committed to providing a one-stop service platform<br/>
+											for comfortable life, rich and comprehensive<br/>
+											functions, convenient and fast service
+										</span>
+									</p>
+									<a class="btn" target="_blank" href="https://www.panasialife.com/">
+										<span class="ch">查看详情</span>
+										<span class="en">More</span>
+									</a>
+							</div>
+						</div>
+						<div class="productBox">
+							<div class="productItem">
+									<img class="logo" src="../image/WerewolfKill.svg"/>
+									<p class="title">
+										<span class="ch">白狼宫面杀助手</span>
+										<span class="en">Werewolf kill</span>
+									</p>
+									<p class="text">
+										<span class="ch">
+											一款超专业的狼人杀面杀工具软件<br/>
+											不同等级的玩家有不同的专区进行较量
+										</span>
+										<span class="en">
+											A super professional Werewolf killing and killing<br/>
+											tool software, different levels of players have<br/> 
+											different zones to compete
+										</span>
+									</p>
+									<a class="btn" target="_blank" href="https://www.langrensha.game">
+										<span class="ch">查看详情</span>
+										<span class="en">More</span>
+									</a>
+							</div>
+							<div class="productItem">
+									<img class="logo" src="../image/customerService.svg"/>
+									<p class="title">
+										<span class="ch">乐客服</span>
+										<span class="en">Lema Concierge Service</span>
+									</p>
+									<p class="text">
+										<span class="ch">
+											乐马国际万能高端出行服务平台<br/>
+											你的选择，我亦追求
+										</span>
+										<span class="en">
+											Lema International Luxury Travel Service Platform<br/>
+											Your choice , We care<br/><br/>
+										</span>
+									</p>
+									<a class="btn" target="_blank" href="https://lecskefu.lemajestic.com">
+										<span class="ch">查看详情</span>
+										<span class="en">More</span>
+									</a>
+							</div>
+							<div class="productItem">
+									<img class="logo" src="../image/weican.svg"/>
+									<p class="title">
+										<span class="ch">微餐时代</span>
+										<span class="en">Micro Meal Era</span>
+									</p>
+									<p class="text">
+										<span class="ch">
+											业内领先的基于云端技术的SaaS餐饮管理软件<br/>
+											打造出集餐饮行业品牌管理体系
+										</span>
+										<span class="en">
+											Industry-leading SaaS food management software<br/>
+											based on cloud technology to create a brand<br/>
+											management system for the food industry
+										</span>
+									</p>
+									<a class="btn" target="_blank" href="https://www.weicantimes.com">
+										<span class="ch">查看详情</span>
+										<span class="en">More</span>
+									</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- 轮播图块 -->
+	<div class="wheelPlantingBox" data-782="margin-top:420px" data-1382="margin-top:221px">
+		<div class="imageBox">
+			<div class="scrollBox">
+				<div class="box">
+					<img class="scroll" src="../image/1.jpg" />
+				</div>
+			</div>
+			<div class="scrollBox">
+				<div class="box">
+					<img class="scroll" src="../image/2.jpg" />
+				</div>
+			</div>
+			<div class="scrollBox">
+				<div class="box">
+					<img class="scroll" src="../image/3.jpg" />
+				</div>
+			</div>
+			<div class="scrollBox">
+				<div class="box">
+					<img src="../image/4.png" />
+				</div>
+			</div>
+		</div>
+		<div class="Progressbar">
+			<div class="bar"></div>
+			<div class="barControl"></div>
+		</div>	
+		<div id="controlCenter">
+			<div class="control">
+				<div class="controlLeft">
+					<span class="btn reviousBtn"></span>
+					<span class="btn nextBtn"></span>
+				</div>
+				<div class="controlRight">
+						<span class="count">01</span>/<span class="amount">05</span>
+				</div>
+			</div>
+			<!-- 文字范围 -->
+			<div class="wheelPlantingInfo">
+					<div class="InfoLeft">
+						<!-- 1对1 对应图片标题 -->
+						<span class="InfoLeftBox">
+							<!-- 这里用i元素套翻译语种 懒 -->
+						  <i class="ch">公司简介</i>
+							<i class="en">About us</i>
+						</span>
+						<span class="InfoLeftBox">
+							<i class="ch">人才战略</i>
+							<i class="en">corporate culture</i>
+						</span>
+						<span class="InfoLeftBox">
+							<i class="ch">工作环境</i>
+							<i class="en">work environment</i>
+						</span>
+						<span class="InfoLeftBox">
+							<i class="ch">联系我们</i>
+							<i class="en">Company address</i>
+						</span>
+					</div>
+					<div class="InfoRight">
+						<!-- 1对1 对应图片内容 -->
+						<p class="InfoRightBox">
+							<span class="ch">傲创网络科技有限公司是一家跨国公司，员工来自不同国家和地区，有着共同的企业文化，这种文化是基于诚信、勤勉和对技术的执着以及长远发展的追求。</span>
+							<span class="en">
+									Aochuang Network Technology Co., Ltd. is a multinational company with employees from different countries and regions, with an average age of about 25 years old. However, we share a common corporate culture, which is based on integrity, diligence, dedication to technology and the pursuit of long-term development.
+							</span>	
+						</p>
+						<p class="InfoRightBox">
+							<span class="ch">
+								人才是一种战略资源。公司以吸引人、发掘人、培养人为文化和战略，对优秀人才的重点培养，定能成就面向未来的顶尖人才梯队。
+							</span>
+							<span class="en">
+									Maintaining competitiveness is not an accident. It will not happen overnight. It is a matter of technology, efficiency and quality. It is acquired through long-term learning. It requires continuous efforts of every employee to achieve excellence.
+									Innovation enables aochuang technology to maintain its leading position in the Internet industry, and provides new products and solutions to meet customers and improve its internal management. Our challenge is to continue to lead the Internet industry and bring value to our customers through continuous innovation.
+									Talent, motivation and teamwork are the most valuable assets of aochuang technology. Improving the self-development and career development of employees will play a crucial role in our career.
+							</span>	
+						</p>
+						<p class="InfoRightBox">
+							<span class="ch">
+								致力于创造并提升多元化工作环境。我们相信来自不同背景、文化、卓识、激情和才华的人才便拥有了产生创意无限的机会，从而满足多元化全球客户需求
+							</span>
+							<span class="en">
+								We are committed to creating a global work environment that supports and promotes diversity and fosters individuals who respect their employees. We believe that when a company gathers talents from different backgrounds and cultures, who are knowledgeable, passionate and talented, it will have unlimited opportunities to generate ideas, so as to meet the needs of diversified global customers.
+							</span>
+						</p>
+						<p class="InfoRightBox">
+							<span class="ch">
+									公司位于高速发展的柬埔寨首都金边，开放的自由市场经济政策使市场经济活动高度自由化，劳动力成本低并享有普惠制待遇
+									<br/>地址：No 635-637，莫尼旺大道, 万景岗3分区，桑园区，金边市									
+							</span>
+							<span class="en">
+								The company is headquartered in Cambodia, which is developing at a high speed. It implements the open free market economic policy, highly liberalized economic activities, rich resources, low labor cost and enjoys GSP treatment
+							</span>
+						</p>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- 脚部容器 -->
+	<div class="footerContent" data-1500="margin-top:235.262px" data-2200="margin-top:0px">
+		<div class="footerCenterContent">
+			<div class="corporateCultureBox">
+				<div class="corporateCulture">
+					<p class="corporateCultureTitle">					
+						<span class="ch">企业文化</span>
+						<span class="en" style="font-size: 25px;">corporate culture</span>
+					</p>
+					<div class="corporateCultureItem f-l box1">
+						<div class="orporateInfoLeft">
+							<p class="orporateTopTitle">
+								<span class="ch">愿 景</span>
+								<span class="en">vision</span>
+							</p>
+							<p class="orporateBottomContent">
+								<span class="ch">
+									东南亚互联网领航企业
+									技术领航东南亚，产品惠及全社会
+								</span>
+								<span class="en">
+										SouthEast Asian internet pioneers technology.
+										It pilots SouthEast Asia products to benefit the society.
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="corporateCultureItem f-r box3">
+						<div class="orporateInfoRight">
+							<p class="orporateTopTitle">
+								<span class="ch">精 神</span>
+								<span class="en">spirit</span>
+							</p>
+							<p class="orporateBottomContent">
+								<span class="ch">
+										做人：团队优先 开放心态 平等分享 互信互爱
+										做事：容新 容错 激情 敬业 极致
+								</span>
+								<span class="en">Everything is still based on user value</span>
+							</p>
+						</div>
+					</div>
+					<div class="corporateCultureItem f-l box2">
+						<div class="orporateInfoLeft">
+							<p class="orporateTopTitle">
+								<span class="ch">使 命</span>
+								<span class="en">Mission</span>
+							</p>
+							<p class="orporateBottomContent">
+								<span class="ch">以领先的技术惠及东南亚国家与人民</span>
+								<span class="en">Improve the quality of human life through Internet services</span>
+							</p>
+						</div>
+					</div>
+					<div class="corporateCultureItem f-r box4">
+						<div class="orporateInfoRight">
+							<p class="orporateTopTitle">
+								<span class="ch">价值观</span>
+								<span class="en">Direct viewing</span>
+							</p>
+							<p class="orporateBottomContent">
+								<span class="ch">做人简单 做事极致 创业激情 团队务实 交付敏捷</span>
+								<span class="en">Integrity, progress, cooperation and innovation</span>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="topLogo" style="padding-top:0;">
+			<img src="../image/welfare.svg" /><br/>
+			<div class="topLogoTitle">
+					<img src="../image/line.png"/>
+					<span class="logoText">
+						<span class="ch">
+							员工福利
+						</span>
+						<span class="en">
+							Employee Benefits
+						</span>
+					</span>
+					<img src="../image/line.png" />
+			</div>
+			<!--
+			<p class="bottomText">Employee Benefits</p>
+			-->
+		</div>
+		<div class="welfareScheduleBox">
+			<div class="row">
+				<div class="Item">
+					<img src="../image/Visaprocessing.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							签证办理
+						</span>
+						<span class="en">
+							Visa processing
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							公司提供入职机票及办理签证、劳工证
+						</span>
+						<span class="en">
+							The company provides entry tickets<br/>and visas and labor certifications
+						</span>
+					</p>
+				</div>
+				<div class="Item">
+					<img src="../image/FestivalPacket.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							节日礼金
+						</span>
+						<span class="en">
+							Holiday Gift
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							生日、结婚、生育以及重要节日的礼金
+						</span>
+						<span class="en">
+							Gifts for birthdays, marriages,<br/> births and important holidays
+						</span>
+					</p>
+				</div>
+				<div class="Item">	
+					<img src="../image/Paidannualleave.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							带薪年假
+						</span>
+						<span class="en">
+							Paid annual leave
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							员工享有每年15天的带薪年假
+						</span>
+						<span class="en">
+							Employees enjoy 15 days of paid<br/> annual leave per year
+						</span>
+					</p>
+				</div>
+				<div class="Item">
+					<img src="../image/Familyvisitholiday.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							探亲福利
+						</span>
+						<span class="en">
+							Family holiday
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							公司提供探亲福利，包含往返机票
+						</span>
+						<span class="en">
+							Company offers family visit<br/> benefits including return air tickets
+						</span> 	
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="Item">
+					<img src="../image/Elastictime.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							人性化管理
+						</span>
+						<span class="en">
+							Management
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							无需打卡，自由安排以有效地工作
+						</span>
+						<span class="en">
+							No need to check in, free to arrange<br/> to work effectively
+						</span>
+					</p>
+				</div>
+				<div class="Item">
+					<img src="../image/activity.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							活动
+						</span>
+						<span class="en">
+							Activity
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							每个月一次团建，每周一次下午茶
+						</span>
+						<span class="en">
+							Group building once a month,<br/> afternoon tea once a week
+						</span>
+					</p>
+				</div>
+				<div class="Item">
+					<img src="../image/IMAC.svg" />
+					<p class="itemTitle">MacBook</p>
+					<p class="itemContent">
+						<span class="ch">
+							我们在办公室提供MacBook
+						</span>
+						<span class="en">
+							We provide IMAc in the office
+						</span>
+					</p>
+				</div>
+				<div class="Item">
+					<img src="../image/Sportsactivities.svg" />
+					<p class="itemTitle">
+						<span class="ch">
+							体育活动
+						</span>
+						<span class="en">
+							Physical activity
+						</span>
+					</p>
+					<p class="itemContent">
+						<span class="ch">
+							公司提供免费健身房设施
+						</span>
+						<span class="en">
+							Company offers free gym facilities
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<div class="pageFooter">
+			<ul>
+				<li>
+					<a href="#service" data-menu-top="500">
+						<span class="ch">公司服务</span>
+						<span class="en">Service</span>
+					</a>
+				</li>
+				<li>
+					<a href="#product" data-menu-top="774">
+						<span class="ch">公司产品</span>
+						<span class="en">Products</span>
+					</a>
+				</li>
+				<li>
+					<a href="#forMe" data-menu-top="1355">
+						<span class="ch">关于我们</span>
+						<span class="en">About US</span>
+					</a>
+				</li>
+				<li>
+					<a href="#corporate" data-menu-top="2172">
+						<span class="ch">企业文化</span>
+						<span class="en">Culture</span>
+					</a>
+				</li>
+				<li>
+					<a href="#welfare" data-menu-top="2679">
+						<span class="ch">员工福利</span>
+						<span class="en">Welfare</span>
+					</a>
+				</li>
+			</ul>
+			<p>
+				Copyright © 2020 AWESOME ULTRON. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 视差滚动插件 -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script> 	
+	
+	<!-- 自写的轮播图jq -->
+	<script type="text/javascript" src="../js/wheelPlanting.js"></script> 	
+	<script type="text/javascript">
+		//页面刷新不再记录 去掉所有会话存储
+		window.sessionStorage.clear();
+
+		//检测是否支持会话存储函数 
+		function checkSession(){
+			if(window.sessionStorage){
+					return true;
+			}else{
+					return false;
+			}
+		}
+		//检测是否支持本地存储函数
+		function checkLocal(){
+			if(window.localStorage){
+					return true;
+			}else{
+					return false;
+			}
+		}
+
+		//滚动插件初始化
+		function skrollrRun(){
+			window.windowScroll = skrollr.init({
+				edgeStrategy: 'set',
+					forceHeight: false,
+					easing: {
+						WTF: Math.random,
+						inverted: function(p) {
+							return 1-p;
+						}
+					}
+			});
+
+			/*
+			skrollr.menu.init(window.windowScroll, {
+				change: function(hash, top) {
+					console.log(hash, top);
+				},
+				animate: true,
+				updateUrl: false,
+				duration: function(currentTop, targetTop) {
+        	return 500;
+				}
+			});
+			*/
+		}
+
+		$(function(){
+			//解除加载遮照
+			$('.loading').animate({
+				opacity : 0
+			},function(){
+				$(this).hide();
+			});
+
+			//滚动导航的代替函数
+			function navScrollPage(){
+				var i = $(window).scrollTop();
+				var top = $(this).data('menu-top');
+				var direction;
+
+				if(i == top){
+					return;
+				}
+
+				//判断 i比top大 还是i比top小 
+				//小 那么是往下滚动 
+				//大 往上滚动
+				if(i > top){
+					direction = 'top';
+				}else if(i < top){
+					direction = 'bottom';
+				}
+
+				var index = setInterval(function(){
+					if(direction == 'top'){//判断是否到位
+						if(i <= top){
+							$(window).scrollTop(top);
+							clearInterval(index);
+							return;
+						}
+					}else if(direction == 'bottom'){
+						if(i >= top){
+							$(window).scrollTop(top);
+							clearInterval(index);
+							return;
+						}
+					}
+
+					if(i > top){
+						i-=30;
+					}else{
+						i+=30;
+					}
+					$(window).scrollTop(i);
+				},1);
+			}
+
+			//模拟滚动--导航
+			$('.nav ul li a').click(navScrollPage);
+			$('.pageFooter ul li a').click(navScrollPage);
+			//模拟滚动--导航
+
+			//语言显示初始化
+			$('.en').hide();
+
+			//第一屏高度全屏
+			$('.giantScreen').height($(window).height());
+
+			//第一屏滚动距离计算
+			$('.giantScreen h1').attr('data-70','height:'+ (parseInt($('.giantScreen h1').height()) + 24) + 'px;margin-bottom:16px;').attr('data-200','height:0px;margin-bottom:' + (parseInt($('.giantScreen h1').height()) + 40) + 'px;');
+			$('.giantScreen p').attr('data-25','height:'+ $('.giantScreen p').height() + 'px;').attr('data-200','height:0px;');
+
+			//按比例设置高度
+			$('.service').css('height',window.innerHeight * 0.8 + 'px');
+
+			//设置第一屏幕动画属性
+			$('.serviceAnimate').attr('data-70','margin-top:0px;').attr('data-1100','margin-top:-'+ $(window).height() +'px;')
+
+			//中英按钮动画
+		  /* 
+			$('.languageButton').click(cnGo);
+			*/
+
+			function cnGo(){
+				var obj = $(this)
+				obj.unbind();
+				obj.click(cnBack);
+				obj.find('.l_change').animate({
+					left : '33px'
+				},function(){
+					
+				});
+				obj.find('.Cn').removeAttr('data-30').attr('data-30','color:white').removeAttr('data-31').attr('data-31','color:black;').css('color','white');
+				obj.find('.En').removeAttr('data-30').attr('data-30','color:black;').removeAttr('data-31').attr('data-31','color:white;').css('color','black');
+				window.windowScroll.destroy();
+				skrollrRun()
+				
+				$('.en').show();
+				$('.ch').hide();
+				
+				//轮播图内容文字高度要做兼容
+				$('.wheelPlantingInfo .InfoRight p[position=top]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
+				$('.InfoRight').height($('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
+				$('.wheelPlantingInfo .InfoRight p[position=bottom]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
+
+				//这代码操作巨屏居中文字的动画
+				$('.giantScreen h1').height('auto');
+				$('.giantScreen p').height('auto');
+				$('.giantScreen h1').attr('data-70','height:'+ (parseInt($('.giantScreen h1').height()) + 24) + 'px;margin-bottom:16px;').attr('data-200','height:0px;margin-bottom:' + (parseInt($('.giantScreen h1').height()) + 40) + 'px;');
+				$('.giantScreen p').attr('data-25','height:'+ $('.giantScreen p').height() + 'px;').attr('data-200','height:0px;');
+				window.windowScroll.destroy();
+				skrollrRun();
+			}
+			function cnBack(){
+				var obj = $(this);
+				obj.unbind();
+				obj.click(cnGo);
+				obj.find('.l_change').animate({
+					left : '0'
+				},function(){
+					
+				});
+				obj.find('.Cn').removeAttr('data-30').attr('data-30','color:black').removeAttr('data-31').attr('data-31','color:white;').css('color','black');
+				obj.find('.En').removeAttr('data-30').attr('data-30','color:white;').removeAttr('data-31').attr('data-31','color:black;').css('color','white');
+				window.windowScroll.destroy();
+				skrollrRun()
+
+				$('.en').hide();
+				$('.ch').show();
+
+				//轮播图内容文字高度要做兼容
+				$('.wheelPlantingInfo .InfoRight p[position=top]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
+				$('.InfoRight').height($('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
+				$('.wheelPlantingInfo .InfoRight p[position=bottom]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
+
+				//这代码操作巨屏居中文字的动画
+				$('.giantScreen h1').height('auto');
+				$('.giantScreen p').height('auto');
+				$('.giantScreen h1').attr('data-70','height:'+ (parseInt($('.giantScreen h1').height()) + 24) + 'px;margin-bottom:16px;').attr('data-200','height:0px;margin-bottom:' + (parseInt($('.giantScreen h1').height()) + 40) + 'px;');
+				$('.giantScreen p').attr('data-25','height:'+ $('.giantScreen p').height() + 'px;').attr('data-200','height:0px;');
+				window.windowScroll.destroy();
+				skrollrRun()
+			}
+
+			$(window).resize(function(){
+				//第一屏高度全屏
+				$('.giantScreen').height($(window).height());
+
+				//注意google地图放大的时候是触发窗口resize的
+				//清理
+				//window.sessionStorage.clear();
+				//执行函数 轮播图初始化
+				carouselInitialization();
+				setTimeout(function(){
+					$('body').css('height','auto');
+
+					//按比例设置高度
+					$('.service').css('height',window.innerHeight * 0.8 + 'px');
+				},300)	
+			});
+			
+			$(window).scroll(function(){
+				$('body').css('height','auto');
+			  if($(window).scrollTop() >= 30){
+					$('.nav ul').addClass('nav2');
+				}else{
+					$('.nav ul').removeClass('nav2');
+				}
+			})
+			
+			//滚动插件实例化
+			setTimeout(function(){
+				//轮播图实例化
+				carouselInitialization();
+				skrollrRun()
+				$('body').css('height','auto');
+			},300);
+	})	
+	</script>
+</body>
+</html>
+
