@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js"
+    "build:dev": "cross-env NODE_ENV=production CDN=http://static1.ultronnet.com webpack --config build/webpack.prod.js",
+    "build:pre": "cross-env NODE_ENV=production CDN=https://teststatic.ultronnet.com webpack --config build/webpack.prod.js",
+    "build:pub": "cross-env NODE_ENV=production CDN=https://static.ultronnet.com webpack --config build/webpack.prod.js"
   },
   "author": "",
   "license": "ISC",

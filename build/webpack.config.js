@@ -14,7 +14,8 @@ module.exports = {
   output:{
     path:path.resolve(__dirname,'../dist'),
     filename:'js/[name].[hash:8].js',
-    chunkFilename:'js/[name].[hash:8].js'
+    chunkFilename:'js/[name].[hash:8].js',
+    publicPath: devMode ? '/' : process.env.CDN,
   },
   module:{
     rules:[
@@ -119,13 +120,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:path.resolve(__dirname,'../src/webfe_m/index.html'),
       filename: 'webfe_m/index.html',
-      cdn: devMode ? '../' : 'https://static.ultronnet.com',
+      cdn: devMode ? '../' : process.env.CDN,
       chunks: ['mobile'],
     }),
     new HtmlWebpackPlugin({
       template:path.resolve(__dirname,'../src/webfe_www/index.html'),
       filename: 'webfe_www/index.html',
-      cdn: devMode ? '../' : 'https://static.ultronnet.com',
+      cdn: devMode ? '../' : process.env.CDN,
       chunks: ['pc'],
     }),
     // new vueLoaderPlugin(),
