@@ -3,10 +3,13 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const vueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const devMode = process.argv.indexOf('--mode=production') === -1;
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const devMode = process.env.NODE_ENV === 'development'
+
 module.exports = {
   entry:{
-    main:path.resolve(__dirname,'../src/main.js')
+    mobile: path.resolve(__dirname,'../src/webfe_m/main.js'),
+    pc: path.resolve(__dirname,'../src/webfe_www/main.js')
   },
   output:{
     path:path.resolve(__dirname,'../dist'),
@@ -109,8 +112,21 @@ module.exports = {
   },
   plugins:[
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin([{
+      from:path.resolve(__dirname,'../src/public'),
+      to:path.resolve(__dirname,'../dist')
+    }]),
     new HtmlWebpackPlugin({
-      template:path.resolve(__dirname,'../public/index.html')
+      template:path.resolve(__dirname,'../src/webfe_m/index.html'),
+      filename: 'webfe_m/index.html',
+      cdn: devMode ? '../' : 'https://static.ultronnet.com',
+      chunks: ['mobile'],
+    }),
+    new HtmlWebpackPlugin({
+      template:path.resolve(__dirname,'../src/webfe_www/index.html'),
+      filename: 'webfe_www/index.html',
+      cdn: devMode ? '../' : 'https://static.ultronnet.com',
+      chunks: ['pc'],
     }),
     // new vueLoaderPlugin(),
     new MiniCssExtractPlugin({

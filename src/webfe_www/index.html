@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>傲创(柬埔寨)网络科技有限公司-傲立东南亚，创新有激情</title>
-	<link rel="shortcut icon" href="../image/ultronnet.ico">
-	<link href="../css/reset.css?v1.0" rel="stylesheet">
+	<link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.cdn %>image/ultronnet.ico">
+	<link href="<%= htmlWebpackPlugin.options.cdn %>css/reset.css" rel="stylesheet">
 	<!-- 本页css -->
-	<link href="../css/pc.css?v1.0" rel="stylesheet">
+	<link href="<%= htmlWebpackPlugin.options.cdn %>css/pc.css" rel="stylesheet">
 	<style>
 		.InfoRightBox[position="center"]{
 			display: block !important;
@@ -54,15 +54,15 @@
 </head>
 <body>
 	<div class="loading">
-		<img class="loading" src="../image/loading.svg"/>
+		<img class="loading" src="<%= htmlWebpackPlugin.options.cdn %>image/loading.svg"/>
 	</div>
 
 	<div id="content">		
 	<!-- 导航 -->
 	<div class="nav" data-30="position:absolute;background-color:transparent;box-shadow: 0 0 5px transparent;" data-31="position: fixed;background-color:#fff;box-shadow: 0 0 5px #eee;">
-		<img class="tipLogo" src="../image/logo.svg" data-30="display:inline;" data-31="display:none;" />
+		<img class="tipLogo" src="<%= htmlWebpackPlugin.options.cdn %>image/logo.svg" data-30="display:inline;" data-31="display:none;" />
 		<!-- 一开始图片先隐藏  -->
-		<img class="tipLogo" src="../image/logo2.svg" style="display: none;" data-30="display:none;" data-31="display:inline;"  />
+		<img class="tipLogo" src="<%= htmlWebpackPlugin.options.cdn %>image/logo2.svg" style="display: none;" data-30="display:none;" data-31="display:inline;"  />
 		<ul>
 			<!--
 			代替插件
@@ -118,13 +118,13 @@
 		<!--
 		<div style="transform: scale(1);width: 100%;height: 100%;" data-0="transform: scale(1);" data-200="transform: scale(1.1);">
 			<div style="position: absolute;bottom: 0;left: 50%;transform: translate(-50%);">
-				<img class="giantScreenBigimg" src="../image/banner2.jpg"/>
+				<img class="giantScreenBigimg" src="<%= htmlWebpackPlugin.options.cdn %>image/banner2.jpg"/>
 			</div>
 		</div>
 		-->
 		<div data-0="background-size: auto 100%;" data-200="background-size: auto 110%;"
 		style="
-		background: url(../image/banner2.jpg) no-repeat center bottom;
+		background: url(<%= htmlWebpackPlugin.options.cdn %>image/banner2.jpg) no-repeat center bottom;
     background-size: auto 100%;
     width: 100%;
 		height: 100%;"
@@ -160,14 +160,14 @@
 	<div class="serviceAnimate"><!-- 这个父元素是用来执行动画的 -->
 		<div class="service" data-439="height:697px" data-1300=" height:1220px"> 
 				<div class="topLogo">
-					<img src="../image/logotop.svg" /><br/>
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/logotop.svg" /><br/>
 					<div class="topLogoTitle">
-							<img src="../image/line.png" />
+							<img src="<%= htmlWebpackPlugin.options.cdn %>image/line.png" />
 							<span class="logoText">
 								<span class="ch">服务&产品</span>
 								<span class="en">Services & Products</span>
 							</span>
-							<img src="../image/line.png" />
+							<img src="<%= htmlWebpackPlugin.options.cdn %>image/line.png" />
 					</div>
 					<!--
 					<p class="bottomText">Service & Product</p>
@@ -176,7 +176,7 @@
 				<div class="serviceCenter">
 					<div class="serviceBox">
 						<div class="serviceCenterItem">
-								<img class="logo" src="../image/productDesign.svg"/>
+								<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/productDesign.svg"/>
 								<p class="title">
 									<span class="ch">产品设计</span>
 									<span class="en">Develop</span>
@@ -194,7 +194,7 @@
 								</p>
 							</div>
 							<div class="serviceCenterItem">
-								<img class="logo" src="../image/it.svg"/>
+								<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/it.svg"/>
 								<p class="title">
 									<span class="ch">
 										技术开发
@@ -215,7 +215,7 @@
 								</p>
 							</div>
 							<div class="serviceCenterItem">
-								<img class="logo" src="../image/BrandOperation.svg"/>
+								<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/BrandOperation.svg"/>
 								<p class="title">
 									<span class="ch">
 										品牌&运营
@@ -236,7 +236,7 @@
 								</p>
 							</div>
 							<div class="serviceCenterItem">
-								<img class="logo" src="../image/Cloudsolutions.svg"/>
+								<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/Cloudsolutions.svg"/>
 								<p class="title">
 									<span class="ch">
 										云解决方案
@@ -261,7 +261,7 @@
 					<div class="product">
 						<div class="productBox">
 							<div class="productItem">
-									<img class="logo" src="../image/lema.svg"/>
+									<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/lema.svg"/>
 									<p class="title">
 										<span class="ch">乐马</span>
 										<span class="en">LE MAJESTIC</span>
@@ -284,7 +284,7 @@
 									</a>
 							</div>
 							<div class="productItem">
-									<img class="logo" src="../image/zhanche.svg"/> 
+									<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/zhanche.svg"/> 
 									<p class="title">
 											<span class="ch">乐马专车</span>
 											<span class="en">Lema Car</span>
@@ -306,7 +306,7 @@
 									</a>
 							</div>
 							<div class="productItem">
-									<img class="logo" src="../image/fanyan.svg"/>
+									<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/fanyan.svg"/>
 									<p class="title">
 										<span class="ch">泛亚生活</span>
 										<span class="en">Panasia</span>
@@ -330,7 +330,7 @@
 						</div>
 						<div class="productBox">
 							<div class="productItem">
-									<img class="logo" src="../image/WerewolfKill.svg"/>
+									<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/WerewolfKill.svg"/>
 									<p class="title">
 										<span class="ch">白狼宫面杀助手</span>
 										<span class="en">Werewolf kill</span>
@@ -352,7 +352,7 @@
 									</a>
 							</div>
 							<div class="productItem">
-									<img class="logo" src="../image/customerService.svg"/>
+									<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/customerService.svg"/>
 									<p class="title">
 										<span class="ch">乐客服</span>
 										<span class="en">Lema Concierge Service</span>
@@ -373,7 +373,7 @@
 									</a>
 							</div>
 							<div class="productItem">
-									<img class="logo" src="../image/weican.svg"/>
+									<img class="logo" src="<%= htmlWebpackPlugin.options.cdn %>image/weican.svg"/>
 									<p class="title">
 										<span class="ch">微餐时代</span>
 										<span class="en">Micro Meal Era</span>
@@ -404,22 +404,22 @@
 		<div class="imageBox">
 			<div class="scrollBox">
 				<div class="box">
-					<img class="scroll" src="../image/1.jpg" />
+					<img class="scroll" src="<%= htmlWebpackPlugin.options.cdn %>image/1.jpg" />
 				</div>
 			</div>
 			<div class="scrollBox">
 				<div class="box">
-					<img class="scroll" src="../image/2.jpg" />
+					<img class="scroll" src="<%= htmlWebpackPlugin.options.cdn %>image/2.jpg" />
 				</div>
 			</div>
 			<div class="scrollBox">
 				<div class="box">
-					<img class="scroll" src="../image/3.jpg" />
+					<img class="scroll" src="<%= htmlWebpackPlugin.options.cdn %>image/3.jpg" />
 				</div>
 			</div>
 			<div class="scrollBox">
 				<div class="box">
-					<img src="../image/4.png" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/4.png" />
 				</div>
 			</div>
 		</div>
@@ -568,9 +568,9 @@
 			</div>
 		</div>
 		<div class="topLogo" style="padding-top:0;">
-			<img src="../image/welfare.svg" /><br/>
+			<img src="<%= htmlWebpackPlugin.options.cdn %>image/welfare.svg" /><br/>
 			<div class="topLogoTitle">
-					<img src="../image/line.png"/>
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/line.png"/>
 					<span class="logoText">
 						<span class="ch">
 							员工福利
@@ -579,7 +579,7 @@
 							Employee Benefits
 						</span>
 					</span>
-					<img src="../image/line.png" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/line.png" />
 			</div>
 			<!--
 			<p class="bottomText">Employee Benefits</p>
@@ -588,7 +588,7 @@
 		<div class="welfareScheduleBox">
 			<div class="row">
 				<div class="Item">
-					<img src="../image/Visaprocessing.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/Visaprocessing.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							签证办理
@@ -607,7 +607,7 @@
 					</p>
 				</div>
 				<div class="Item">
-					<img src="../image/FestivalPacket.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/FestivalPacket.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							节日礼金
@@ -626,7 +626,7 @@
 					</p>
 				</div>
 				<div class="Item">	
-					<img src="../image/Paidannualleave.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/Paidannualleave.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							带薪年假
@@ -645,7 +645,7 @@
 					</p>
 				</div>
 				<div class="Item">
-					<img src="../image/Familyvisitholiday.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/Familyvisitholiday.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							探亲福利
@@ -666,7 +666,7 @@
 			</div>
 			<div class="row">
 				<div class="Item">
-					<img src="../image/Elastictime.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/Elastictime.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							人性化管理
@@ -685,7 +685,7 @@
 					</p>
 				</div>
 				<div class="Item">
-					<img src="../image/activity.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/activity.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							活动
@@ -704,7 +704,7 @@
 					</p>
 				</div>
 				<div class="Item">
-					<img src="../image/IMAC.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/IMAC.svg" />
 					<p class="itemTitle">MacBook</p>
 					<p class="itemContent">
 						<span class="ch">
@@ -716,7 +716,7 @@
 					</p>
 				</div>
 				<div class="Item">
-					<img src="../image/Sportsactivities.svg" />
+					<img src="<%= htmlWebpackPlugin.options.cdn %>image/Sportsactivities.svg" />
 					<p class="itemTitle">
 						<span class="ch">
 							体育活动
@@ -777,233 +777,13 @@
 	</div>
 	</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="<%= htmlWebpackPlugin.options.cdn %>js/jquery.min.js"></script>
 	<!-- 视差滚动插件 -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script> 	
+	<script type="text/javascript" src="<%= htmlWebpackPlugin.options.cdn %>js/skrollr.min.js"></script> 	
 	
 	<!-- 自写的轮播图jq -->
-	<script type="text/javascript" src="../js/wheelPlanting.js"></script> 	
-	<script type="text/javascript">
-		//页面刷新不再记录 去掉所有会话存储
-		window.sessionStorage.clear();
+	<script type="text/javascript" src="<%= htmlWebpackPlugin.options.cdn %>js/wheelPlanting.js"></script> 	
 
-		//检测是否支持会话存储函数 
-		function checkSession(){
-			if(window.sessionStorage){
-					return true;
-			}else{
-					return false;
-			}
-		}
-		//检测是否支持本地存储函数
-		function checkLocal(){
-			if(window.localStorage){
-					return true;
-			}else{
-					return false;
-			}
-		}
-
-		//滚动插件初始化
-		function skrollrRun(){
-			window.windowScroll = skrollr.init({
-				edgeStrategy: 'set',
-					forceHeight: false,
-					easing: {
-						WTF: Math.random,
-						inverted: function(p) {
-							return 1-p;
-						}
-					}
-			});
-
-			/*
-			skrollr.menu.init(window.windowScroll, {
-				change: function(hash, top) {
-					console.log(hash, top);
-				},
-				animate: true,
-				updateUrl: false,
-				duration: function(currentTop, targetTop) {
-        	return 500;
-				}
-			});
-			*/
-		}
-
-		$(function(){
-			//解除加载遮照
-			$('.loading').animate({
-				opacity : 0
-			},function(){
-				$(this).hide();
-			});
-
-			//滚动导航的代替函数
-			function navScrollPage(){
-				var i = $(window).scrollTop();
-				var top = $(this).data('menu-top');
-				var direction;
-
-				if(i == top){
-					return;
-				}
-
-				//判断 i比top大 还是i比top小 
-				//小 那么是往下滚动 
-				//大 往上滚动
-				if(i > top){
-					direction = 'top';
-				}else if(i < top){
-					direction = 'bottom';
-				}
-
-				var index = setInterval(function(){
-					if(direction == 'top'){//判断是否到位
-						if(i <= top){
-							$(window).scrollTop(top);
-							clearInterval(index);
-							return;
-						}
-					}else if(direction == 'bottom'){
-						if(i >= top){
-							$(window).scrollTop(top);
-							clearInterval(index);
-							return;
-						}
-					}
-
-					if(i > top){
-						i-=30;
-					}else{
-						i+=30;
-					}
-					$(window).scrollTop(i);
-				},1);
-			}
-
-			//模拟滚动--导航
-			$('.nav ul li a').click(navScrollPage);
-			$('.pageFooter ul li a').click(navScrollPage);
-			//模拟滚动--导航
-
-			//语言显示初始化
-			$('.en').hide();
-
-			//第一屏高度全屏
-			$('.giantScreen').height($(window).height());
-
-			//第一屏滚动距离计算
-			$('.giantScreen h1').attr('data-70','height:'+ (parseInt($('.giantScreen h1').height()) + 24) + 'px;margin-bottom:16px;').attr('data-200','height:0px;margin-bottom:' + (parseInt($('.giantScreen h1').height()) + 40) + 'px;');
-			$('.giantScreen p').attr('data-25','height:'+ $('.giantScreen p').height() + 'px;').attr('data-200','height:0px;');
-
-			//按比例设置高度
-			$('.service').css('height',window.innerHeight * 0.8 + 'px');
-
-			//设置第一屏幕动画属性
-			$('.serviceAnimate').attr('data-70','margin-top:0px;').attr('data-1100','margin-top:-'+ $(window).height() +'px;')
-
-			//中英按钮动画
-		  /* 
-			$('.languageButton').click(cnGo);
-			*/
-
-			function cnGo(){
-				var obj = $(this)
-				obj.unbind();
-				obj.click(cnBack);
-				obj.find('.l_change').animate({
-					left : '33px'
-				},function(){
-					
-				});
-				obj.find('.Cn').removeAttr('data-30').attr('data-30','color:white').removeAttr('data-31').attr('data-31','color:black;').css('color','white');
-				obj.find('.En').removeAttr('data-30').attr('data-30','color:black;').removeAttr('data-31').attr('data-31','color:white;').css('color','black');
-				window.windowScroll.destroy();
-				skrollrRun()
-				
-				$('.en').show();
-				$('.ch').hide();
-				
-				//轮播图内容文字高度要做兼容
-				$('.wheelPlantingInfo .InfoRight p[position=top]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
-				$('.InfoRight').height($('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
-				$('.wheelPlantingInfo .InfoRight p[position=bottom]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
-
-				//这代码操作巨屏居中文字的动画
-				$('.giantScreen h1').height('auto');
-				$('.giantScreen p').height('auto');
-				$('.giantScreen h1').attr('data-70','height:'+ (parseInt($('.giantScreen h1').height()) + 24) + 'px;margin-bottom:16px;').attr('data-200','height:0px;margin-bottom:' + (parseInt($('.giantScreen h1').height()) + 40) + 'px;');
-				$('.giantScreen p').attr('data-25','height:'+ $('.giantScreen p').height() + 'px;').attr('data-200','height:0px;');
-				window.windowScroll.destroy();
-				skrollrRun();
-			}
-			function cnBack(){
-				var obj = $(this);
-				obj.unbind();
-				obj.click(cnGo);
-				obj.find('.l_change').animate({
-					left : '0'
-				},function(){
-					
-				});
-				obj.find('.Cn').removeAttr('data-30').attr('data-30','color:black').removeAttr('data-31').attr('data-31','color:white;').css('color','black');
-				obj.find('.En').removeAttr('data-30').attr('data-30','color:white;').removeAttr('data-31').attr('data-31','color:black;').css('color','white');
-				window.windowScroll.destroy();
-				skrollrRun()
-
-				$('.en').hide();
-				$('.ch').show();
-
-				//轮播图内容文字高度要做兼容
-				$('.wheelPlantingInfo .InfoRight p[position=top]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
-				$('.InfoRight').height($('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
-				$('.wheelPlantingInfo .InfoRight p[position=bottom]').css('top',$('.wheelPlantingInfo .InfoRight p[position=center]').height() + 'px');
-
-				//这代码操作巨屏居中文字的动画
-				$('.giantScreen h1').height('auto');
-				$('.giantScreen p').height('auto');
-				$('.giantScreen h1').attr('data-70','height:'+ (parseInt($('.giantScreen h1').height()) + 24) + 'px;margin-bottom:16px;').attr('data-200','height:0px;margin-bottom:' + (parseInt($('.giantScreen h1').height()) + 40) + 'px;');
-				$('.giantScreen p').attr('data-25','height:'+ $('.giantScreen p').height() + 'px;').attr('data-200','height:0px;');
-				window.windowScroll.destroy();
-				skrollrRun()
-			}
-
-			$(window).resize(function(){
-				//第一屏高度全屏
-				$('.giantScreen').height($(window).height());
-
-				//注意google地图放大的时候是触发窗口resize的
-				//清理
-				//window.sessionStorage.clear();
-				//执行函数 轮播图初始化
-				carouselInitialization();
-				setTimeout(function(){
-					$('body').css('height','auto');
-
-					//按比例设置高度
-					$('.service').css('height',window.innerHeight * 0.8 + 'px');
-				},300)	
-			});
-			
-			$(window).scroll(function(){
-				$('body').css('height','auto');
-			  if($(window).scrollTop() >= 30){
-					$('.nav ul').addClass('nav2');
-				}else{
-					$('.nav ul').removeClass('nav2');
-				}
-			})
-			
-			//滚动插件实例化
-			setTimeout(function(){
-				//轮播图实例化
-				carouselInitialization();
-				skrollrRun()
-				$('body').css('height','auto');
-			},300);
-	})	
-	</script>
 </body>
 </html>
 
